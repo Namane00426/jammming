@@ -4,6 +4,7 @@ import './App.css';
 import SearchBar from '../SearchBar/SearchBar';
 import Playlist from '../Playlist/Playlist'
 import SearchResults from '../SearchResults/SearchResults';
+import Sportify from '../../util/spotify';
 
 
 
@@ -53,10 +54,17 @@ class App extends React.Component {
 
   savePlaylist() {
     const trackURIs = this.state.playlistTracks.map(track => track.uri);
-  }
+    Sportify.savePlaylist(this.state.playlistName, trackURIs).then(() => 
+    this.setState({
+      playlistname: 'New playlist',
+      playlistTraks: []
+    })
+  )}
 
   search(term) {
-    console.log(term);
+    Sportify.search(term).then(searchResults => {
+      this.setState({searchResults: searchResults})
+    })
   }
 
   render() {
