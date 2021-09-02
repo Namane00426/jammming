@@ -1,5 +1,5 @@
 const clientId = 'c9ff4196c9294f58b0de5ab51e8e49d7';
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "http://nns_spotifyApp.surge.sh";
 let accessToken;
 
 const Spotify = {
@@ -73,7 +73,7 @@ const Spotify = {
         })
       })
     })
-    
+
   }
 }
 
