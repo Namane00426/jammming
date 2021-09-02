@@ -10,7 +10,7 @@ class Track extends React.Component {
   }
 
   renderAction() {
-    if(this.props.isRemoval){
+     if (this.props.isRemoval){
       return <button className="Track-action"
       onClick={this.removeTrack}>-</button>
     } else {
@@ -29,10 +29,12 @@ class Track extends React.Component {
   render() {
     return (
     <div className="Track">
+      <img src={this.props.track.image} alt='album img'/>
         <div className="Track-information">
           <h3>{this.props.track.name}</h3>
           <p>{this.props.track.artist} | {this.props.track.album}</p>
         </div>
+        <audio src={this.props.track.preview}controls></audio>
         {this.renderAction()}
     </div>
     )
