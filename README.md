@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+--
+### Feture request document
+As a option project, the app is added functions that displaying album images and music reviewing player.
+[google docs link](https://docs.google.com/document/d/1utjqzyHyn31zOhgmypgWMCakw7NBzL6MlA6k9Za-RS8/edit?usp=sharing)
