@@ -1,5 +1,5 @@
 const clientId = 'c9ff4196c9294f58b0de5ab51e8e49d7';
-const redirectUri = "http://nns_musicapp.surge.sh";
+const redirectUri = "https://nns-musicapp.netlify.app/";
 let accessToken;
 
 const Spotify = {
